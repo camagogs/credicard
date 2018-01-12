@@ -1,10 +1,296 @@
+@font-face{ 
+  font-family: 'FiraSans-SemiBold';
+  src: url('../../assets/utils/fire-sans/FiraSans-SemiBold.woff') format("opentype");
+  src: url('../../assets/utils/fire-sans/FiraSans-SemiBold.otf') format("opentype");
+}
+@font-face{ 
+  font-family: 'FiraSans-Regular';
+  src: url('../../assets/utils/fire-sans/FiraSans-SemiBold.woff') format("opentype");
+  src: url('../../assets/utils/fire-sans/FiraSans-Regular.otf') format("opentype");
+}
+
+/* First part of site */
+
 .cred-container-superior-left{
   height: 768px;
-  width: 527px;
+  width: 418px;
   display: inline-block;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 32px;
 }
 .cred-container-superior-rigth{
-  width: 527px;
+  width: 418px;
   height: 768px;
   display: inline-block;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 32px; 
+  float: right;
+  background-image: url('../../assets/utils/images/concert-768722_1920.jpg');
+  position: relative;
+}
+.cred-container-superior-left p{
+  font-size: 20px;
+  font-family: 'FiraSans-Regular';
+  color: #3F4243;
+  width: 370px;
+  margin-top: 5%;
+}
+.cred-container-superior-left h3{
+  font-size: 48px;
+  font-family: 'FiraSans-SemiBold';
+  color: #0D456F;
+  width: 370px;
+  padding-top: 5%;
+}
+.cred-container-superior-rigth p {
+  font-family: 'FiraSans-Regular';
+  color: #fff;
+  font-size: 16px;
+  float: right;
+  padding-top: 12px; 
+  padding-right: 18px; 
+}
+.cred-btn-duvida{
+  height: 48px;
+  width: 130px;
+  border-radius: 32px;
+  border: 1px solid #fff;
+  background-color: #fff; 
+  font-family:'FiraSans-SemiBold';
+  color: #0D456F;
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+}
+
+.cred-btn-login{
+  font-family: 'FiraSans-SemiBold';
+  color: #0D456F;
+  width: 96px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: #fff; 
+  float: right;
+}
+.cred-btn-menu{
+  width: 65px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #0D456F;
+  color: #0D456F;
+  font-family: 'FiraSans-SemiBold';
+  margin-right: 23.5px; 
+}
+.cred-container-logo{
+  background-image: url('../../assets/utils/credicard-logo.svg') ;
+  height: 21.1px;
+  width: 156px;
+  display: inline-block;
+  vertical-align: -6px; 
+}
+.cred-container-menu-logo{
+  height: 40px;
+}
+.cred-container-image{
+  background-image: url('../../assets/utils/images/cred-1.png');
+  height: 214px;
+  width: 150px;
+  margin-top: 25%; 
+}
+.cred-btn-quero{
+  background-color: #D01481;
+  height: 44px;
+  width: 210px;
+  border-radius: 4px;
+  border: 1px solid #D01481;
+  font-family: 'FiraSans-SemiBold';
+  color: #fff;
+  margin-top: 5%;
+}
+
+/* Secund part of site */
+
+.cred-container-segund{
+  height: 768px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 32px; 
+  background: linear-gradient(-50deg, #90FDBF, #34627F ,#56708E, #90FDBF, #34627F ,#56708E); 
+}
+.cred-paragrafh{
+  font-family: 'FiraSans-Regular';
+  font-size: 20px;
+  color: #fff;
+  margin-top: 30px;
+}
+.cred-container-card:last-child{
+  margin-right: 0 !important;
+}
+.cred-container-card{
+  height: 323px;
+  width: 210px;
+  background-color: #fff;
+  border-radius: 4px 4px 4px 4px;
+  display: inline-block;
+  margin-right: 52px;
+  position: relative;
+}
+.cred-container-card h5{
+  font-family: 'FiraSans-semiBold';
+  font-size: 20px; 
+  color: #0D456F;
+  padding-top: 20px; 
+  padding-left: 15px; 
+}
+.cred-container-card p{
+  font-family: 'FiraSans-Regular';
+  font-size: 16px;
+  color: rgba(63,66,67,1);
+  padding-top: 20px; 
+  padding-left: 15px; 
+}
+.cred-plus{
+  height: 32px;
+  width: 32px;
+  background-color: #0D456F;
+  display: inline-block;
+  border-radius: 4px 0 4px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.cred-container-cards{
+  display: flex;
+  margin-top: 60px;
+}
+.cred-card-image{
+  background-image: url('../../assets/utils/images/concert-1209323_1920.jpg');
+  height: 160px;
+  border-radius: 4px 4px 0 0; 
+}
+.cred-container-segund h4{
+  font-size: 48px;
+  font-family: 'FiraSans-semiBold';
+  color: #fff;
+  margin-top: 100px;
+}
+.cred-ball-active{
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+.cred-container-balls{
+  width: 50px;
+  margin: auto;
+  margin-top: 20px;
+}
+.cred-ball{
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.4;
+  display: inline-block;
+}
+.cred-container-btn{
+  width: 210px;
+  margin: auto;
+  margin-top: 12px;
+}
+/* Third part of site */
+
+.cred-container-third{
+  height: 768px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 32px; 
+}
+
+.cred-container-third h4{
+  font-size: 48px;
+  font-family: 'FiraSans-semiBold';
+  color: #0D456F;
+  width: 450px;
+  margin-top: 180px;
+}
+.cred-paragrafh-des{
+  margin-top: 20px !important; 
+  font-size: 20px !important;
+  font-family: 'FiraSans-Regular' !important;
+  width: 370px !important;
+  color: #3F4243 !important;
+}
+.cred-container-third p {
+  font-size: 14px;
+  font-family: 'FiraSans-Regular';
+  color: #0D456F;
+}
+.cred-container-third-icons{
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  border: 1px solid rgba(213,218,220,1); 
+}
+.cred-containers-icons p{
+  margin-top: 20px;
+}
+.cred-containers-icons{
+  margin-top: 20px;
+  max-width: 92px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 45px;
+}
+.cred-btn-want-third{
+  background-color: #D01481;
+  height: 44px;
+  width: 210px;
+  border-radius: 4px;
+  border: 1px solid #D01481;
+  font-family: 'FiraSans-SemiBold';
+  color: #fff;
+  margin-top: 5%;
+  display: inline-block;
+}
+.cred-icons{
+  max-width: 560px;
+}
+.cred-container-third-itens{
+  width: 560px;
+  display: inline-block;
+}
+.cred-image-third {
+  margin-top: 140px;
+  background-image: url('../../assets/utils/images/cel-cred.png');
+  height: 596px;
+  width: 290px; 
+  display: inline-block;
+  float: right;
+}
+/* Fouth part of site */
+
+.cred-container-fourth{
+  height: 768px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 32px; 
+}
+
+/* Footer of site */
+
+footer{
+  height: 320px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-top: 32px; 
+  background-color: #0D456F;
+  color: #fff;
+  font-family: 'FiraSans-Regular'
 }
