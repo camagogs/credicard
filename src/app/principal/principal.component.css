@@ -18,6 +18,7 @@
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px;
+  position: relative;
 }
 .cred-container-superior-rigth{
   width: 418px;
@@ -28,7 +29,15 @@
   padding-top: 32px; 
   float: right;
   background-image: url('../../assets/utils/images/concert-768722_1920.jpg');
+  background-size:cover;
   position: relative;
+}
+.cred-container-superior-left span{
+  font-size: 36px;
+  position: absolute;
+  bottom: 25px;
+  right: 32px;
+  color: #0D456F;
 }
 .cred-container-superior-left p{
   font-size: 20px;
@@ -52,6 +61,7 @@
   padding-top: 12px; 
   padding-right: 18px; 
 }
+
 .cred-btn-duvida{
   height: 48px;
   width: 130px;
@@ -65,7 +75,16 @@
   right: 22px;
   bottom: 22px;
 }
-
+.cred-btn-duvida span{ 
+  font-size: 32px; 
+  margin-right: 5px;
+  float: left;
+  line-height: 48px;
+}
+.cred-btn-duvida p{
+  color: #0D456F;
+ 
+}
 .cred-btn-login{
   font-family: 'FiraSans-SemiBold';
   color: #0D456F;
@@ -75,6 +94,15 @@
   border: 1px solid #fff;
   background-color: #fff; 
   float: right;
+}
+.cred-btn-login span{
+  color: #0D456F;
+
+  margin-right: 5px;
+}
+.cred-btn-login span::before{
+  color: #0D456F;
+  font-size: 14px;
 }
 .cred-btn-menu{
   width: 65px;
@@ -86,8 +114,23 @@
   font-family: 'FiraSans-SemiBold';
   margin-right: 23.5px; 
 }
+.cred-container-login-acesso-sc p{
+  color: #fff;
+  font-family: 'FiraSans-Regular';
+  font-size: 16px;
+  line-height: 40px;
+}
+.cred-container-login-acesso-sc{
+  display: inline-block;
+  float: right;
+  width: 300px;
+}
+.cred-container-login-acesso{
+  display: inline-block;
+  float: right;
+}
 .cred-container-logo{
-  background-image: url('../../assets/utils/credicard-logo.svg') ;
+  background-image: url('../../assets/utils/credicard-logo.svg');
   height: 21.1px;
   width: 156px;
   display: inline-block;
@@ -95,6 +138,8 @@
 }
 .cred-container-menu-logo{
   height: 40px;
+  width: 250px;
+  display: inline-block;
 }
 .cred-container-image{
   background-image: url('../../assets/utils/images/cred-1.png');
@@ -115,7 +160,71 @@
 
 /* Secund part of site */
 
+.cred-btn-menu-sc{
+  width: 65px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'FiraSans-SemiBold';
+  margin-right: 23.5px; 
+}
+.cred-container-logo2{
+  background-image: url('../../assets/utils/credicard-logo2.svg');
+  height: 21.1px;
+  width: 156px;
+  display: inline-block;
+  vertical-align: -6px; 
+}
+.cred-btn-duvida-sc p{
+  line-height: 48px;
+}
+.cred-btn-duvida-sc span{
+  font-size: 32px; 
+  float: left;
+  line-height: 48px;
+}
+.cred-btn-duvida-sc{
+  height: 48px;
+  width: 130px;
+  border-radius: 32px;
+  border: 1px solid #fff;
+  background-color: #fff; 
+  font-family:'FiraSans-SemiBold';
+  color: #0D456F;
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+}
+.cred-btn-login-sc p{
+  font-family: 'FiraSans-Regular' !important;
+  color: #fff !important;
+}
+.cred-btn-login-sc span::before{
+  color: #0D456F;
+}
+.cred-btn-login-sc{
+  font-family: 'FiraSans-SemiBold';
+  color: #0D456F;
+  width: 96px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: #fff; 
+  float: right;
+}
+.icon-arrow-down-icon{
+  display: block;
+  margin: auto;
+  width: 36px;
+  font-size: 36px;
+  color: #fff;
+  padding-top: 10px;
+}
 .cred-container-segund{
+  position: relative;
   height: 768px;
   padding-left: 47px;
   padding-right: 47px;
@@ -155,14 +264,25 @@
   padding-left: 15px; 
 }
 .cred-plus{
-  height: 32px;
-  width: 32px;
+  height: 20px;
+  width: 20px;
   background-color: #0D456F;
   display: inline-block;
   border-radius: 4px 0 4px 0;
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 8px;
+}
+.cred-plus span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100; 
+  /* text-align: center; */
+  
+}
+.path1 , .path2 , .path3 , .path5 {
+  color: #0D456F;
 }
 .cred-container-cards{
   display: flex;
@@ -170,6 +290,7 @@
 }
 .cred-card-image{
   background-image: url('../../assets/utils/images/concert-1209323_1920.jpg');
+  background-size: cover;
   height: 160px;
   border-radius: 4px 4px 0 0; 
 }
@@ -177,7 +298,7 @@
   font-size: 48px;
   font-family: 'FiraSans-semiBold';
   color: #fff;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .cred-ball-active{
   width: 8px;
@@ -206,19 +327,43 @@
 }
 /* Third part of site */
 
+.cred-btn-menu-th{
+  width: 65px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #0D456F;
+  color: #0D456F;
+  font-family: 'FiraSans-SemiBold';
+  margin-right: 23.5px; 
+}
+.cred-container-logo-th{
+  background-image: url('../../assets/utils/credicard-logo.svg');
+  height: 21.1px;
+  width: 156px;
+  display: inline-block;
+  vertical-align: -6px; 
+}
+.cred-container-menu-logo-th{
+  height: 40px;
+  width: 250px;
+  float: left;
+  display: block;
+  clear: both;
+}
 .cred-container-third{
   height: 768px;
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px; 
+  overflow: hidden;
 }
-
 .cred-container-third h4{
   font-size: 48px;
   font-family: 'FiraSans-semiBold';
   color: #0D456F;
   width: 450px;
-  margin-top: 180px;
+  margin-top: 50px;
 }
 .cred-paragrafh-des{
   margin-top: 20px !important; 
@@ -236,7 +381,15 @@
   height: 92px;
   width: 92px;
   border-radius: 50%;
-  border: 1px solid rgba(213,218,220,1); 
+  border: 2px solid #d5dadc; 
+}
+.cred-container-third-icons span {
+  font-size:  48px;
+  color: #0D456F;
+  line-height: 94px;
+}
+.cred-container-third-icons span::before{
+  color: #0D456f;
 }
 .cred-containers-icons p{
   margin-top: 20px;
@@ -263,13 +416,13 @@
   max-width: 560px;
 }
 .cred-container-third-itens{
-  width: 560px;
+  width: 100%;
   display: inline-block;
 }
 .cred-image-third {
-  margin-top: 140px;
   background-image: url('../../assets/utils/images/cel-cred.png');
-  height: 596px;
+  background-size: cover;
+  height: 528px;
   width: 290px; 
   display: inline-block;
   float: right;
@@ -281,16 +434,231 @@
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px; 
+  background: linear-gradient(-50deg, rgb(253, 144, 238), rgb(197, 28, 98) ,rgb(252, 69, 124)); 
+}
+.cred-container-fourth-image{
+  background-image: url('../../assets/utils/images/cred-1.png');
+  height: 214px;
+  width: 150px;
 }
 
+.cred-container-ad{
+  width: 290px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  padding-right: 30px;
+}
+.cred-container-ad-box{
+  height: 500px;
+  display: inline-block;
+}
+.cred-btn-see{
+  font-family: 'FiraSans-SemiBold';
+  font-size: 16px;
+  width: 255px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #00000000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.cred-container-ad span{
+  font-family: 'FiraSans-SemiBold';
+  font-size: 36px;
+  color: #fff;
+}
+.cred-container-ad h4{
+  font-family: 'FiraSans-Regular';
+  font-size: 36px;
+  color: #fff;
+}
+.cred-container-ad p {
+  font-family: 'FiraSans-Regular';
+  color: #fff;
+  font-size: 20px;
+}
+.cred-container-bene {
+  float: left;
+  width: 232px;
+  padding-right: 40px;
+  border-right: 1px solid #D8D8D8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+.cred-container-bene-p{
+  width: 233px;
+  float: right;
+  display: flex;
+  padding-left: 40px; 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+.cred-container-bene h3{
+  font-family: 'FiraSans-SemiBold';
+  font-size: 30px;
+  color: #0D456F;
+  width: 198px;
+}
+.cred-container-bene p{
+  font-family: 'FiraSans-Regular';
+  font-size: 20px;
+  color:#3F4243; 
+}
+.cred-container-bene-p p{
+  color: #3F4243; 
+}
+.cred-container-bene-p h3{
+  font-family: 'FiraSans-SemiBold';
+  font-size: 30px;
+  color: #0D456F;
+}
+.icon-card-icon ~ p{
+  font-size: 16px !important;
+  line-height: 30px;
+  color: #3F4243;
+}
+.icon-card-icon{
+  color: #D01481;
+  font-size: 30px; 
+  float: left;
+  display: inline-block;
+  padding-right: 15px; 
+}
+.icon-vee-icon ~ p{
+  font-size: 16px !important;
+  line-height: 30px;
+  color: #3F4243;
+}
+.icon-vee-icon{
+  color: #D01481;
+  font-size: 30px; 
+  float: left;
+  display: inline-block;
+  padding-right: 15px;
+}
+.icon-pig-icon{
+  color: #D01481;
+  font-size: 30px;
+  float: left;
+  display: inline-block;
+  padding-right: 15px;
+}
+.icon-pig-icon span::before{
+  color: #D01481;
+  font-size: 30px;
+}
+#cred-ano{
+  font-size: 16px !important; 
+  line-height: 30px;
+  color: #3F4243;
+}
+#cred-anui{
+  font-size: 16px !important; 
+  line-height: 30px;
+  color: #3F4243;
+}
+.cred-container-bene-p{
+  font-family: 'FiraSans-Regular';
+}
+.cred-container-bene-p p{
+  font-family: 'FiraSans-Regular';
+  font-size: 20px;
+}
+.cred-container-box{
+  margin-top: 30px;
+  width: 546px;
+  height: 423px;
+  background-color: #fff;
+  border-radius: 4px;
+  float: right;
+  padding-left: 32px;
+  padding-right: 32px; 
+  padding-top: 47px;
+  border-bottom: 1px 1px 24px #3F4243;
+}
 /* Footer of site */
 
 footer{
-  height: 320px;
+  height: 288px;
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px; 
   background-color: #0D456F;
   color: #fff;
-  font-family: 'FiraSans-Regular'
+ 
+}
+.cred-container-footer-top{
+  font-size: 14px;
+  font-family: 'FiraSans-Regular';
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #607B93;
+}
+.cred-container-footer-top p{
+  display: inline;
+  border-right: 1px solid #607B93;
+  padding-right: 15px; 
+  padding-left: 10px; 
+}
+#cred-id-inicio{
+  padding-left: 0 !important; 
+}
+#cred-id-platinum{
+  border: none !important;
+}
+.cred-container-footer-meddle p{  
+  font-family: 'FiraSans-Regular';
+  font-size: 14px;
+}
+.cred-container-footer-meddle{
+  display: block;
+  border-bottom: 1px solid #607B93;
+}
+.cred-container-footer-meddle-top{
+  display: flex;
+  justify-content: space-between;
+}
+.cred-container-footer-meddle-top p{
+  display: inline;
+  margin-top: 30px;
+ 
+}
+.cred-container-footer-meddle-down{
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.cred-container-footer-meddle-down p{
+  display: inline;
+  padding-right: 105px; 
+}
+.cred-container-footer-down{
+  border-bottom: 1px solid #607B93;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+#cred-read{ 
+  font-family: 'FiraSans-SemiBold';
+  font-size: 14px;
+}
+#cred-bank{
+  font-family: 'FiraSans-Regular';
+  font-size: 12px;
+  padding-top: 5px; 
+  font-weight: 50;
+}
+.cred-container-fooner-year {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cred-container-fooner-year p{
+  font-family: 'FiraSans-SemiBold';
+  font-size: 12px;
 }
