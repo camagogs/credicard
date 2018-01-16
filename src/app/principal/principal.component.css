@@ -10,10 +10,10 @@
 }
 
 /* First part of site */
-
 .cred-container-superior-left{
   height: 768px;
-  width: 418px;
+  width: calc(50% - 94px);
+  max-width: calc(50% - 94px);
   display: inline-block;
   padding-left: 47px;
   padding-right: 47px;
@@ -21,16 +21,18 @@
   position: relative;
 }
 .cred-container-superior-rigth{
-  width: 418px;
+  width: calc(50% - 94px);
+  max-width: calc(50% - 94px);
   height: 768px;
   display: inline-block;
   padding-left: 47px;
   padding-right: 47px;
-  padding-top: 32px; 
+  padding-top: 32px;
   float: right;
+  position: relative;
   background-image: url('../../assets/utils/images/concert-768722_1920.jpg');
   background-size:cover;
-  position: relative;
+  background-repeat: no-repeat;
 }
 .cred-container-superior-left span{
   font-size: 36px;
@@ -83,7 +85,6 @@
 }
 .cred-btn-duvida p{
   color: #0D456F;
- 
 }
 .cred-btn-login{
   font-family: 'FiraSans-SemiBold';
@@ -159,6 +160,10 @@
 }
 
 /* Secund part of site */
+.cred-container-central-slide{
+  width: 930px;
+  margin: auto;
+}
 
 .cred-btn-menu-sc{
   width: 65px;
@@ -229,7 +234,7 @@
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px; 
-  background: linear-gradient(-50deg, #90FDBF, #34627F ,#56708E, #90FDBF, #34627F ,#56708E); 
+  background: radial-gradient( #0b917a,#143251 ) ,radial-gradient( #143251, #0b917a);
 }
 .cred-paragrafh{
   font-family: 'FiraSans-Regular';
@@ -246,7 +251,6 @@
   background-color: #fff;
   border-radius: 4px 4px 4px 4px;
   display: inline-block;
-  margin-right: 52px;
   position: relative;
 }
 .cred-container-card h5{
@@ -278,8 +282,10 @@
   color: #fff;
   font-size: 18px;
   font-weight: 100; 
-  /* text-align: center; */
-  
+}
+.cred-container-menu-login{
+  width: 930px;
+  margin: auto;
 }
 .path1 , .path2 , .path3 , .path5 {
   color: #0D456F;
@@ -287,6 +293,7 @@
 .cred-container-cards{
   display: flex;
   margin-top: 60px;
+  justify-content: space-between;
 }
 .cred-card-image{
   background-image: url('../../assets/utils/images/concert-1209323_1920.jpg');
@@ -351,12 +358,50 @@
   display: block;
   clear: both;
 }
+.cred-container-login-acesso-th p{
+  color: #fff;
+  font-family: 'FiraSans-Regular';
+  font-size: 16px !important;
+  line-height: 40px;
+}
+.cred-container-login-acesso-th{
+  display: inline-block;
+  float: right;
+  width: 300px;
+}
+.cred-btn-login-th{
+  font-family: 'FiraSans-SemiBold';
+  color: #fff;
+  width: 96px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #0D456F;
+  background-color: #0D456F !important; 
+  float: right;
+}
+.cred-btn-login-th span{
+  color: #fff;
+  margin-right: 5px;
+}
+.cred-btn-login-th span::before{
+  color: #fff;
+  font-size: 14px;
+}
+.cred-container-itens-image{
+  display: flex;
+  flex-direction: row;
+  float: left;
+  justify-content: space-between;
+  width: 68%;
+  margin-top: 90px
+}
 .cred-container-third{
   height: 768px;
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px; 
   overflow: hidden;
+  position: relative;
 }
 .cred-container-third h4{
   font-size: 48px;
@@ -409,39 +454,79 @@
   border: 1px solid #D01481;
   font-family: 'FiraSans-SemiBold';
   color: #fff;
-  margin-top: 5%;
+  margin-top: 35px;
   display: inline-block;
 }
 .cred-icons{
-  max-width: 560px;
+  margin-top: 30px;
+  /* width: 100%; */
 }
 .cred-container-third-itens{
   width: 100%;
   display: inline-block;
 }
-.cred-image-third {
+.cred-image-third{
   background-image: url('../../assets/utils/images/cel-cred.png');
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 528px;
   width: 290px; 
   display: inline-block;
-  float: right;
+  margin-top: 90px; 
 }
+.cred-btn-duvida-th{
+  height: 48px;
+  width: 130px;
+  border-radius: 32px;
+  border: 1px solid #0D456F;
+  background-color: #0D456F; 
+  font-family:'FiraSans-SemiBold';
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+}
+.cred-btn-duvida-th span{ 
+  font-size: 32px; 
+  float: left;
+  line-height: 48px;
+}
+.cred-btn-duvida-th p{
+  color: #fff;
+  line-height: 48px;
+}
+.cred-container-third-arrow span{
+  color: #0D456F !important;
+}
+.cred-container-third-arrow{
+  width: 50px;
+  height: 40px;
+  margin: auto;
+  display: block;   
+  margin-top: 40px;
+}
+
 /* Fouth part of site */
 
+.cred-container-fourth-things{
+  width: 930px;
+  margin: auto;
+}
 .cred-container-fourth{
   height: 768px;
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px; 
-  background: linear-gradient(-50deg, rgb(253, 144, 238), rgb(197, 28, 98) ,rgb(252, 69, 124)); 
+  background: radial-gradient( #4d2353, #ad1a72), radial-gradient( #ad1a72,#4d2353);
+  position: relative;
 }
 .cred-container-fourth-image{
   background-image: url('../../assets/utils/images/cred-1.png');
   height: 214px;
   width: 150px;
 }
-
 .cred-container-ad{
   width: 290px;
   float: left;
@@ -454,6 +539,62 @@
 .cred-container-ad-box{
   height: 500px;
   display: inline-block;
+  margin-top: 100px;
+}
+.cred-container-login-acesso-fh p{
+  color: #fff;
+  font-family: 'FiraSans-Regular';
+  font-size: 16px;
+  line-height: 40px;
+}
+.cred-container-login-acesso-fh{
+  display: inline-block;
+  float: right;
+  width: 300px;
+}
+.cred-container-login-acesso-fh{
+  display: inline-block;
+  float: right;
+}
+.cred-btn-login-fh{
+  font-family: 'FiraSans-SemiBold';
+  color: #0D456F;
+  width: 96px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: #fff; 
+  float: right;
+}
+.cred-btn-duvida-fh{
+  height: 48px;
+  width: 130px;
+  border-radius: 32px;
+  border: 1px solid #fff;
+  background-color: #fff; 
+  font-family:'FiraSans-SemiBold';
+  color: #0D456F;
+  font-size: 16px;
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+}
+.cred-btn-duvida-fh span{ 
+  font-size: 32px; 
+  float: left;
+  line-height: 48px;
+}
+.cred-btn-duvida-fh p{
+  color: #0D456F;
+  line-height: 48px;
+}
+.cred-btn-login-fh span{
+  color: #0D456F;
+  margin-right: 5px;
+}
+.cred-btn-login-fh span::before{
+  color: #0D456F;
+  font-size: 14px;
 }
 .cred-btn-see{
   font-family: 'FiraSans-SemiBold';
@@ -591,7 +732,10 @@ footer{
   padding-top: 32px; 
   background-color: #0D456F;
   color: #fff;
- 
+}
+.cred-container-footer-central{
+  width: 930px;
+  margin: auto;
 }
 .cred-container-footer-top{
   font-size: 14px;
@@ -628,7 +772,6 @@ footer{
 .cred-container-footer-meddle-top p{
   display: inline;
   margin-top: 30px;
- 
 }
 .cred-container-footer-meddle-down{
   display: flex;
