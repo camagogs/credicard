@@ -10,45 +10,58 @@
 }
 
 /* First part of site */
-.cred-container-superior-left{
-  height: 768px;
-  width: calc(50% - 94px);
-  max-width: calc(50% - 94px);
-  display: inline-block;
+.cred-container-first{
+  position: relative;
+  display: block;
+
+}
+.cred-container-first-central{
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px;
-  position: relative;
+  height: 768px;
+  width: 930px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 10;
+}
+.cred-container-superior-left{
+  width: calc(100%/3);
+  display: inline-block;
+  height: 768px;
 }
 .cred-container-superior-rigth{
   width: calc(50% - 94px);
-  max-width: calc(50% - 94px);
   height: 768px;
-  display: inline-block;
+  display: block;
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px;
   float: right;
-  position: relative;
   background-image: url('../../assets/utils/images/concert-768722_1920.jpg');
   background-size:cover;
   background-repeat: no-repeat;
+  position: relative;
 }
-.cred-container-superior-left span{
+.cred-container-first-central{
+  width: calc(50% - 94px);
+  display: inline-block;
+}
+.cred-container-first-central span{
   font-size: 36px;
   position: absolute;
-  bottom: 25px;
-  right: 32px;
   color: #0D456F;
 }
-.cred-container-superior-left p{
+.cred-container-first-central p{
   font-size: 20px;
   font-family: 'FiraSans-Regular';
   color: #3F4243;
   width: 370px;
   margin-top: 5%;
 }
-.cred-container-superior-left h3{
+.cred-container-first-central h3{
   font-size: 48px;
   font-family: 'FiraSans-SemiBold';
   color: #0D456F;
@@ -63,7 +76,18 @@
   padding-top: 12px; 
   padding-right: 18px; 
 }
-
+.cred-container-login-acesso p{
+  color: rgb(122, 74, 74);
+  font-family: 'FiraSans-Regular';
+  font-size: 16px;
+  line-height: 40px;
+}
+.cred-container-login-acesso{
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .cred-btn-duvida{
   height: 48px;
   width: 130px;
@@ -74,13 +98,11 @@
   color: #0D456F;
   font-size: 16px;
   position: absolute;
-  right: 22px;
-  bottom: 22px;
+  right: 25px;
+  bottom: 52px;
 }
 .cred-btn-duvida span{ 
   font-size: 32px; 
-  margin-right: 5px;
-  float: left;
   line-height: 48px;
 }
 .cred-btn-duvida p{
@@ -98,7 +120,6 @@
 }
 .cred-btn-login span{
   color: #0D456F;
-
   margin-right: 5px;
 }
 .cred-btn-login span::before{
@@ -114,21 +135,6 @@
   color: #0D456F;
   font-family: 'FiraSans-SemiBold';
   margin-right: 23.5px; 
-}
-.cred-container-login-acesso-sc p{
-  color: #fff;
-  font-family: 'FiraSans-Regular';
-  font-size: 16px;
-  line-height: 40px;
-}
-.cred-container-login-acesso-sc{
-  display: inline-block;
-  float: right;
-  width: 300px;
-}
-.cred-container-login-acesso{
-  display: inline-block;
-  float: right;
 }
 .cred-container-logo{
   background-image: url('../../assets/utils/credicard-logo.svg');
@@ -166,7 +172,17 @@
   margin: auto;
   position: relative;
 }
-
+.cred-container-login-acesso-sc p{
+  color: #fff;
+  font-family: 'FiraSans-Regular';
+  font-size: 16px;
+  line-height: 40px;
+}
+.cred-container-login-acesso-sc{
+  display: inline-block;
+  float: right;
+  width: 300px;
+}
 .cred-btn-menu-sc{
   width: 65px;
   height: 40px;
@@ -531,6 +547,7 @@
 
 /* Fouth part of site */
 
+
 .cred-container-fourth-things{
   width: 930px;
   margin: auto;
@@ -826,4 +843,38 @@ footer{
 .cred-container-fooner-year p{
   font-family: 'FiraSans-SemiBold';
   font-size: 12px;
+}
+
+@media screen and (min-width:1366px){
+  .cred-container-menu-login{
+     width: 1109px;
+  }
+}
+@media screen and (min-width:1366px){
+  .cred-container-central-slide{
+     width: 1109px;
+  }
+  .cred-container-card{
+    width: 255px;
+  }
+}
+
+@media screen and (min-width:1366px){
+  .cred-container-third-menu-login{
+     width: 1109px;
+  }
+}
+@media screen and (min-width:1366px){
+  .cred-container-fourth-things{
+     width: 1109px;
+     margin: auto;
+  }
+  .cred-container-ad-box{
+    width: 100%;
+  }
+}
+@media screen and (min-width:1366px){
+  .cred-container-footer-central{
+     width: 1109px;
+  }
 }
