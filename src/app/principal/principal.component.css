@@ -160,9 +160,11 @@
 }
 
 /* Secund part of site */
+
 .cred-container-central-slide{
   width: 930px;
   margin: auto;
+  position: relative;
 }
 
 .cred-btn-menu-sc{
@@ -252,6 +254,7 @@
   border-radius: 4px 4px 4px 4px;
   display: inline-block;
   position: relative;
+  box-shadow: 2px 0 24px rgba(63, 66, 67, 0.596);
 }
 .cred-container-card h5{
   font-family: 'FiraSans-semiBold';
@@ -300,6 +303,20 @@
   background-size: cover;
   height: 160px;
   border-radius: 4px 4px 0 0; 
+}
+.cred-arrow-left{
+  position: absolute;
+  transform: rotate(90deg);
+  top: 45%;
+  z-index: 10;
+  left: -45px;
+}
+.cred-arrow-right{
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 45%;
+  z-index: 10;
+  right: -45px;
 }
 .cred-container-segund h4{
   font-size: 48px;
@@ -368,6 +385,10 @@
   display: inline-block;
   float: right;
   width: 300px;
+}
+.cred-container-third-menu-login{
+  width: 930px;
+  margin: auto;
 }
 .cred-btn-login-th{
   font-family: 'FiraSans-SemiBold';
@@ -722,6 +743,7 @@
   padding-right: 32px; 
   padding-top: 47px;
   border-bottom: 1px 1px 24px #3F4243;
+  box-shadow: 0 0 24px rgba(63, 66, 67, 0.658);
 }
 /* Footer of site */
 
