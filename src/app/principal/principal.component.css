@@ -8,19 +8,17 @@
   src: url('../../assets/utils/fire-sans/FiraSans-SemiBold.woff') format("opentype");
   src: url('../../assets/utils/fire-sans/FiraSans-Regular.otf') format("opentype");
 }
-
 /* First part of site */
 .cred-container-first{
   position: relative;
   display: block;
-
 }
 .cred-container-first-central{
   padding-left: 47px;
   padding-right: 47px;
   padding-top: 32px;
   height: 768px;
-  width: 930px;
+  min-width: 930px;
   display: inline-block;
   position: absolute;
   left: 50%;
@@ -28,7 +26,7 @@
   z-index: 10;
 }
 .cred-container-superior-left{
-  width: calc(100%/3);
+  width: calc(50% - 97px);
   display: inline-block;
   height: 768px;
 }
@@ -66,7 +64,7 @@
   font-family: 'FiraSans-SemiBold';
   color: #0D456F;
   width: 370px;
-  padding-top: 5%;
+  padding-top: 4%;
 }
 .cred-container-superior-rigth p {
   font-family: 'FiraSans-Regular';
@@ -76,17 +74,50 @@
   padding-top: 12px; 
   padding-right: 18px; 
 }
-.cred-container-login-acesso p{
-  color: rgb(122, 74, 74);
-  font-family: 'FiraSans-Regular';
+#cred-btn-first span::before{
+  float: right;
+  color: #0D456F;
+  display: inline;
+  line-height: 16px;
+  width:  5px;
   font-size: 16px;
-  line-height: 40px;
 }
-.cred-container-login-acesso{
-  display: flex;
+#cred-btn-first div{ 
+  height: 14px;
+  width: 8px;
+  display: inline;
+  float: left;
+}
+#cred-btn-first{
+  width: 96px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  font-family: 'FiraSans-SemiBold';
+  font-size: 16px;
+  color: #0D456F;
+}
+.cred-login-container-first{
+  width: 270px;
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 30px;
+  right: 47px;
+
+}
+.cred-login-container-first p{
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  width: 165px;
+}
+.cred-login-container-first button{
+  display: inline-block;
+
+}
+#icon-arrow-down-icon-superior{
+  position: absolute;
+  right: 52%;
 }
 .cred-btn-duvida{
   height: 48px;
@@ -116,15 +147,15 @@
   border-radius: 4px;
   border: 1px solid #fff;
   background-color: #fff; 
-  float: right;
 }
 .cred-btn-login span{
   color: #0D456F;
-  margin-right: 5px;
+  display: inline;
+  font-size: 16px;
 }
 .cred-btn-login span::before{
   color: #0D456F;
-  font-size: 14px;
+  display: inline;
 }
 .cred-btn-menu{
   width: 65px;
@@ -149,10 +180,13 @@
   display: inline-block;
 }
 .cred-container-image{
-  background-image: url('../../assets/utils/images/cred-1.png');
+  background-image: url('../../assets/utils/images/cred-1.png'); 
+  background-size:contain;
+  background-repeat: no-repeat;
   height: 214px;
   width: 150px;
-  margin-top: 25%; 
+  margin-top: 7%; 
+
 }
 .cred-btn-quero{
   background-color: #D01481;
@@ -164,9 +198,7 @@
   color: #fff;
   margin-top: 5%;
 }
-
 /* Secund part of site */
-
 .cred-container-central-slide{
   width: 930px;
   margin: auto;
@@ -366,7 +398,6 @@
   margin-top: 12px;
 }
 /* Third part of site */
-
 .cred-btn-menu-th{
   width: 65px;
   height: 40px;
@@ -544,10 +575,7 @@
   display: block;   
   margin-top: 40px;
 }
-
 /* Fouth part of site */
-
-
 .cred-container-fourth-things{
   width: 930px;
   margin: auto;
@@ -763,7 +791,6 @@
   box-shadow: 0 0 24px rgba(63, 66, 67, 0.658);
 }
 /* Footer of site */
-
 footer{
   height: 288px;
   padding-left: 47px;
@@ -845,36 +872,106 @@ footer{
   font-size: 12px;
 }
 
+/* media screen for 1366 */
 @media screen and (min-width:1366px){
-  .cred-container-menu-login{
-     width: 1109px;
+  .cred-container-first-central{
+    width: 1110px;
   }
-}
-@media screen and (min-width:1366px){
+  .cred-container-menu-login{
+    width: 1110px;
+  }
   .cred-container-central-slide{
-     width: 1109px;
+    width: 1110px;
   }
   .cred-container-card{
     width: 255px;
   }
-}
-
-@media screen and (min-width:1366px){
   .cred-container-third-menu-login{
-     width: 1109px;
+    width: 1110px;
   }
-}
-@media screen and (min-width:1366px){
   .cred-container-fourth-things{
-     width: 1109px;
-     margin: auto;
+    width: 1110px;
+    margin: auto;
   }
   .cred-container-ad-box{
     width: 100%;
   }
-}
-@media screen and (min-width:1366px){
   .cred-container-footer-central{
-     width: 1109px;
+    width: 1110px;
+  }
+}
+/* media screen for 1920 */
+@media screen and (max-width:1366px){
+  #icon-arrow-down-icon-superior{
+    bottom: 40px;
+  }
+}
+@media screen and (min-width:1920px){
+  .cred-container-menu-login{
+    display: none;
+  }
+  .cred-btn-duvida-sc{
+    display: none;
+  }
+  .icon-arrow-down-icon{
+    display: none;
+  }
+  .cred-container-things-central{
+    display: none;
+  }
+  .cred-btn-duvida-th{
+    display: none;
+  }
+  .cred-btn-duvida-fh{
+    display: none;
+  }
+}
+/*  media sreen for < 1024 */
+@media screen and (max-width: 1023px){
+  .cred-container-first-central{
+    min-width: 688px;
+    height: 608px;
+  }
+  .cred-container-superior-left{
+    height: 608px;
+  }
+  .cred-container-menu-login{
+    width: 688px;
+  }
+  .cred-container-menu-login{
+    display: none;
+  }
+  .cred-btn-duvida{
+    top: 68%;
+    right: 6%;
+  }
+  .cred-container-image{
+    width: 124px;
+    height: 184px;
+  }
+  #cred-zero{
+    font-size: 36px;
+    width: 100%;
+    word-break: initial;
+  }
+  .cred-container-first-central > p{
+    font-size: 20px;
+    width: 330px;
+  }
+  .cred-container-first-central h3{
+    font-size: 36px;
+    width: 330px;
+  }
+  .cred-container-cards > div:nth-child(4){
+    display: none;
+  }
+  .cred-container-central-slide{
+    width: 688px;
+  }
+  .cred-container-segund{
+    height: 695px;
+  }
+  .cred-btn-duvida-sc{
+    display: none;
   }
 }
