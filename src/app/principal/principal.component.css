@@ -530,8 +530,8 @@
   /* width: 100%; */
 }
 .cred-container-third-itens{
-  width: 100%;
   display: inline-block;
+  margin: auto;
 }
 .cred-image-third{
   background-image: url('../../assets/utils/images/cel-cred.png');
@@ -587,6 +587,7 @@
   padding-top: 32px; 
   background: radial-gradient( #4d2353, #ad1a72), radial-gradient( #ad1a72,#4d2353);
   position: relative;
+  overflow: hidden;
 }
 .cred-container-fourth-image{
   background-image: url('../../assets/utils/images/cred-1.png');
@@ -699,7 +700,6 @@
 }
 .cred-container-bene-p{
   width: 233px;
-  float: right;
   display: flex;
   padding-left: 40px; 
   flex-direction: column;
@@ -798,6 +798,7 @@ footer{
   padding-top: 32px; 
   background-color: #0D456F;
   color: #fff;
+  overflow: hidden;
 }
 .cred-container-footer-central{
   width: 930px;
@@ -951,8 +952,15 @@ footer{
   }
   #cred-zero{
     font-size: 36px;
-    width: 100%;
-    word-break: initial;
+    margin-top: 40px;
+    white-space: nowrap;
+  }
+  .cred-container-cards{
+    margin-top: 50px;
+  }
+  .cred-paragrafh{
+    margin-top: 21px;
+    white-space: nowrap;
   }
   .cred-container-first-central > p{
     font-size: 20px;
@@ -974,4 +982,133 @@ footer{
   .cred-btn-duvida-sc{
     display: none;
   }
+  #icon-arrow-down-icon-superior{
+    display: none;
+  }
+  .cred-arrow-left{
+    left: -32px;
+  }
+  .cred-arrow-right{
+    right: -32px;
+  }
+  #cred-arraw-sc{
+    display: none; 
+  }
+  .cred-container-third{
+    height: 526px;
+  }
+  .cred-container-third-itens{
+    width: 690px;
+    margin: auto;
+  }
+  .cred-container-menu-logo-th{
+    display: none;
+  }
+  .cred-image-third,.cred-btn-duvida-th, .cred-container-login-acesso-th {
+    display: none;
+  }
+  .cred-paragrafh-des {
+    white-space: nowrap;
+    font-size: 20px; 
+  }
+  .cred-container-third-itens h4{
+    margin-top: 0;
+    font-size: 36px;
+    white-space: nowrap;
+  }
+  .cred-container-third-itens{
+    width: 100;
+    margin: auto;
+  }
+  .cred-container-third-arrow{
+    display: none;
+  }
+  .cred-btn-want-third{
+    margin: auto;
+    width: 210px;
+    display: block;
+    margin-top: 50px;
+  }
+  .cred-icons{
+    width: 656px;
+    display: flex;
+    justify-content: space-between; 
+  }
+  .cred-containers-icons {
+    min-width: 150px;
+    margin-right: 0;
+  }
+  .cred-containers-icons div{
+    margin: auto;
+    margin-left: auto;
+  }
+  .cred-containers-icons p{
+    width: 150px;
+    text-align: center;
+  }
+  .cred-container-ad p{
+    margin-top: 10px; 
+   }
+  .cred-container-fourth-image{
+    display: none;
+  }
+  .cred-container-ad{
+    display: block;
+    float: none;
+    width: 100%;
+    height: 80px;
+  }
+  .cred-container-menu-logo, .cred-container-login-acesso-fh,.cred-btn-duvida-fh{
+    display: none;
+  }
+  .cred-container-ad{
+    margin-bottom: 30px;
+  }
+  .cred-container-ad-box{
+    margin-top: 40px;
+    height: 100%;
+  }
+  .cred-container-fourth{
+    padding-left: 0;
+  }
+  .cred-container-fourth-things{
+    width: 626px;
+    margin: auto;
+  }
+  .cred-container-ad p{
+    font-size: 20px;
+  }
+  .cred-container-ad h4{
+    font-size: 30px;
+  }
+  .cred-container-bene-p{
+    margin: auto;
+  }
+  .cred-container-box{
+    display: block;
+    margin: auto;
+    float: left;
+    width: 595px;
+    height: 486px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .cred-btn-see{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .cred-container-footer-central{
+    width: 690px;
+  }
+
+  @media screen and (min-width: 768px){
+    .cred-container-first{
+      height: 666px;
+    }
+  }
+
+
+
 }
