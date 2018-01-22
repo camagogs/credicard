@@ -13,6 +13,9 @@
   position: relative;
   display: block;
 }
+#cred-container-question-ball{
+  display: none;
+}
 .cred-container-first-central{
   padding-left: 47px;
   padding-right: 47px;
@@ -927,6 +930,14 @@ footer{
     display: none;
   }
 }
+@media screen and (min-width: 667px){
+  #cred-zero{
+    white-space: nowrap;
+  }
+  .cred-paragrafh{
+    white-space: nowrap;
+  }
+} 
 /*  media sreen for < 1024 */
 @media screen and (max-width: 1023px){
   .cred-container-first-central{
@@ -953,14 +964,12 @@ footer{
   #cred-zero{
     font-size: 36px;
     margin-top: 40px;
-    white-space: nowrap;
   }
   .cred-container-cards{
     margin-top: 50px;
   }
   .cred-paragrafh{
     margin-top: 21px;
-    white-space: nowrap;
   }
   .cred-container-first-central > p{
     font-size: 20px;
@@ -1103,12 +1112,143 @@ footer{
     width: 690px;
   }
 
-  @media screen and (min-width: 768px){
+  
+  @media screen and (max-width: 767px){
+    .cred-container-segund-central{
+      width: 767px;
+      margin: auto;
+    }
+    .cred-container-balls{
+      width: 500px;
+    }
     .cred-container-first{
+      height: 576px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cred-container-first-central{ 
+      min-width: 320px;
+      height: 288px;
+      margin: auto;
+      margin-top: 140px;
+      padding-left: 70px;
+    }
+    .cred-container-superior-left{
+      display: none;
+    }
+    .cred-container-superior-rigth{
+      display: block;
+      width: 100%;
+      min-width: 320px;
+      height: 288px;
+    }
+    .cred-container-menu-logo{
+      position: absolute;
+      top: -120px;
+    }
+    .cred-container-logo{
+      background: url('../../assets/utils/credicard-logo2.svg');
+    }
+    .cred-container-menu-logo button{
+      border: 1px solid #fff;
+      background-color: #00000000;
+      color: #fff;
+    }
+    .cred-login-container-first{
+      display: none;
+    }
+    .cred-container-card{
+      width: 237px;
+    }
+    .cred-btn-duvida{
+      display: none;
+    }
+    .cred-paragrafh{
+      width: 90px;
+      font-size: 16px;
+    }
+    .icon-arrow-down-icon{
+      display: none;
+    }
+    #cred-container-card-th, #cred-container-card-fh{
+      display: none;
+    }
+    #cred-container-sc{
+      opacity: .5;
+    }
+    .cred-container-menu-logo{
+      display: inline-block;
+    }
+    .cred-btn-quero{
+      width: 290px;
+    }
+    .cred-container-image{
+      margin: 0;
+    }
+    .cred-container-first-central p{
+      font-size: 16px;
+      width: 289px;
+    }
+    .cred-container-first-central h3{
+      font-size: 30px;
+      width: 230px;
+    }
+    .cred-container-cards{
+      width: 500px;
+    }
+    .cred-container-segund{
       height: 666px;
+      overflow: hidden;
+    }
+    .cred-container-third{
+      overflow: hidden;
+    }
+    .cred-container-fourth{
+      overflow: hidden;
+    }
+    footer{
+      overflow: hidden;
+    }
+    #icon-arrow-down-icon-superior{
+      display: inline-block;
+      color: #0D456f;
+      font-size: 22px;
+      bottom: -110px;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+    .cred-container-zero-paragrafh{
+      width: 290px;
+    }
+    #cred-zero{
+      white-space: wrap;
+      font-size: 30px;
+    }
+    .cred-paragrafh{
+      width: 284px;
+    }
+    .cred-container-segund{
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    .cred-container-segund-central{
+      width: 320px;
+      margin: auto;
+    }
+    #cred-container-question-ball{
+      z-index: 10;
+      height: 48px;
+      width: 48px;
+      line-height: 48px;
+      background-color: #0D456f;
+      display: inline-block;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+      font-family: 'FiraSans-Regular'; 
+      position: absolute;
+      bottom: -20px;
+      right: 18px;
     }
   }
-
-
-
 }
