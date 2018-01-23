@@ -875,7 +875,6 @@ footer{
   font-family: 'FiraSans-SemiBold';
   font-size: 12px;
 }
-
 /* media screen for 1366 */
 @media screen and (min-width:1366px){
   .cred-container-first-central{
@@ -950,6 +949,9 @@ footer{
   .cred-container-menu-login{
     width: 688px;
   }
+  .cred-container-third-itens{
+    padding-left: 60px;
+  }
   .cred-container-menu-login{
     display: none;
   }
@@ -1005,10 +1007,19 @@ footer{
   }
   .cred-container-third{
     height: 526px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .cred-container-third-itens{
     width: 690px;
     margin: auto;
+  }
+  .cred-container-third-itens p{
+    font-size: 16px!important;
+  }
+  .cred-container-third-itens h4{
+    font-size: 30px!important;
+    white-space: wrap;
   }
   .cred-container-menu-logo-th{
     display: none;
@@ -1111,15 +1122,19 @@ footer{
   .cred-container-footer-central{
     width: 690px;
   }
-
-  
   @media screen and (max-width: 767px){
     .cred-container-segund-central{
       width: 767px;
       margin: auto;
     }
+    #cred-btn-want-sc{
+      position: absolute;
+      left: 50%;
+      transform: translate(-118%,0);
+      margin-top: 2%;
+    }
     .cred-container-balls{
-      width: 500px;
+      width: 430px;
     }
     .cred-container-first{
       height: 576px;
@@ -1202,6 +1217,16 @@ footer{
     }
     .cred-container-third{
       overflow: hidden;
+      height: 628px;
+    }
+    .cred-container-third-itens{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    .cred-btn-want-third{
+      width: 290px;
+      display: inline-block;
     }
     .cred-container-fourth{
       overflow: hidden;
@@ -1235,6 +1260,34 @@ footer{
       width: 320px;
       margin: auto;
     }
+    .cred-container-third-itens h4{
+      white-space: pre-wrap;
+    }
+    .cred-container-third-itens p{
+      white-space: pre-wrap;
+    }
+    .cred-container-third-itens{
+      width: 320px;
+    }
+    .cred-container-third-itens{
+      padding-left:22px;
+    }
+    .cred-container-itens-image{
+      width: 320px;
+      margin: 0;
+    }
+    .cred-container-itens-image p{
+      max-width: 280px;
+    }
+    .cred-container-itens-image h4{
+      font-size: 28px!important;
+    }
+    .cred-icons{
+      display: grid;
+      width: 320px;
+      grid-template-columns: auto auto;
+      justify-content: center;
+    }
     #cred-container-question-ball{
       z-index: 10;
       height: 48px;
@@ -1250,5 +1303,99 @@ footer{
       bottom: -20px;
       right: 18px;
     }
+    /* Fourty party od layout */
+      .cred-container-fourth{
+        height: 1043px;
+        padding-left: 12px; 
+        padding-top: 10px;
+      }
+      .cred-container-bene{
+        background-color: #fff; 
+        width: 290px;
+        border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 24px rgba(63, 66, 67, 0.651);
+      }
+      .cred-container-bene-p{
+        background-color: #fff;
+        width: 290px;
+        margin: 0;
+        border-radius: 4px;
+        box-shadow: 0px 0px 24px rgba(63, 66, 67, 0.651);
+      }
+      .cred-container-box{
+        background-color: #00000000;
+        box-shadow: none;
+        padding: 0;
+        width: 290px;
+      }
+      .cred-container-ad span{
+        font-size: 24px;
+      }
+      .cred-container-ad p{
+        font-size: 16px; 
+      }
+      .cred-container-ad h4{
+        font-size: 24px;
+      }
+      .cred-container-ad{
+        width: 287px;
+      }
+      .cred-container-bene button{
+        width: 241px;
+      }
+      .cred-container-bene-p h3{
+        margin-top: 25px;
+      }
+      .cred-container-bene-p{
+        padding-left: 20px;
+        width: 268px;
+        padding-bottom: 40px;
+        height: 348px !important;
+      }
+      .cred-container-bene-p button{
+        width: 241px;
+      }
+      .cred-container-bene h3{
+        width: 200px;
+        padding-top: 30px; 
+      }
+      .cred-container-bene{
+        margin-bottom: 25px;
+        padding-left: 20px;
+        width: 229px;
+        padding-bottom: 40px;
+        height: 348px !important;
+      }
+      .cred-container-ad-box{
+        width: 290px;
+      }
+      .cred-container-fourth-things{
+          width: 290px;
+          margin: auto;
+      }
+      .cred-btn-see{
+        transform: translate(-52%, 0);
+        width: 183px;
+      }
+      /* footer */
+      footer{
+        padding-left: 15px;
+        height: 463px;
+        padding-bottom: 0;
+      }
+      .cred-container-footer-central{
+        width: 290px;
+      }
+      .cred-container-footer-meddle-top{
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .cred-container-footer-meddle-down{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px 15px;
+        white-space: nowrap;
+      }
   }
 }
